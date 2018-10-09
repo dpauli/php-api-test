@@ -1,0 +1,23 @@
+{
+  "name": "dpauli/php-api-test",
+  "description": "Test an API with PHP and document their calls.",
+  "type": "project",
+  "homepage": "https://github.com/dpauli/php-api-test",
+  "readme": "README.md",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0",
+    "guzzlehttp/guzzle": "6.3.*",
+    "phpdocumentor/reflection-docblock": "4.3.*",
+    "phpunit/phpunit": "7.4.*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ApiTest\\": "src/",
+      "Tests\\": "tests/"
+    }
+  }
+}
